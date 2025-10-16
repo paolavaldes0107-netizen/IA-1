@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, roc_curve
 
 # Cargar el conjunto de datos
-df = pd.read_csv('1mp215-topicos-especiales\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
+df = pd.read_csv('IA\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
 
 # Dividir el conjunto de datos en características y objetivo
 X = df.drop(columns=['Outcome'])  # Reemplazar 'target' con el nombre real de la columna objetivo

@@ -13,7 +13,7 @@ from sklearn.metrics import (
 # Cargar el conjunto de datos
 # -----------------------------
 # Evita el warning de secuencias de escape en Windows usando raw string (r'...') o '/'.
-df = pd.read_csv(r'1mp215-topicos-especiales\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
+df = pd.read_csv(r'IA\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
 
 # Dividir en características y objetivo
 X = df.drop(columns=['Outcome'])
