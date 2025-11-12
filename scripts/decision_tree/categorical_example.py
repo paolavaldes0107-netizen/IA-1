@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 # Cargar el dataset de enfermedades cardíacas
-df = pd.read_csv('../../../datasets/heart_disease_dataset/heart_disease.csv')
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\heart_disease_dataset\heart_disease.csv')
 
 # Identificar columnas categóricas (tipo object)
 categorical_columns = df.select_dtypes(include=['object']).columns.tolist()

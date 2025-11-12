@@ -29,7 +29,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 
 # Cargar dataset de diabetes de indios Pima
-df = pd.read_csv('../../../datasets/pima_indian_diabetes_dataset/full_dataset.csv')
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\pima_indian_diabetes_dataset\full_dataset.csv')
 
 # Separar características y variable objetivo
 X = df.drop(columns=['Outcome'])

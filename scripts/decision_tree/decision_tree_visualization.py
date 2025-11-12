@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 # Cargar dataset limpio de diabetes
-df = pd.read_csv('../../../datasets/pima_indian_diabetes_dataset/cleaned_dataset.csv')
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
 
 # Separar características y variable objetivo
 X = df.drop(columns=['Outcome'])
@@ -37,7 +37,7 @@ y = df['Outcome']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Entrenar árbol de decisión con profundidad limitada para visualización clara
-clf = DecisionTreeClassifier(max_depth=6, random_state=42)
+clf = DecisionTreeClassifier(max_depth=4, random_state=42)
 clf.fit(X_train, y_train)
 
 # Crear visualización del árbol con formato SVG para zoom sin pérdida

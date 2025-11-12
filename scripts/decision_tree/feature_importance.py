@@ -31,7 +31,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 
 # Cargar dataset limpio de diabetes
-df = pd.read_csv('../../../datasets/pima_indian_diabetes_dataset/cleaned_dataset.csv')
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
 
 # Separar características y variable objetivo
 X = df.drop(columns=['Outcome'])

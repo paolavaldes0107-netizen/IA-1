@@ -37,7 +37,7 @@ from sklearn.metrics import (
 )
 
 # Cargar dataset limpio de diabetes
-df = pd.read_csv('../../../datasets/pima_indian_diabetes_dataset/full_dataset.csv')
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\pima_indian_diabetes_dataset\full_dataset.csv')
 
 # Separar características y variable objetivo
 X = df.drop(columns=['Outcome'])
