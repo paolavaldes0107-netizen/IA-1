@@ -62,7 +62,7 @@ else:
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Entrenar árbol de decisión con profundidad limitada para evitar overfitting
-clf = DecisionTreeClassifier(max_depth=6, random_state=42)
+clf = DecisionTreeClassifier(max_depth=10, random_state=42)
 clf.fit(X_train, y_train)
 
 # Exportar el árbol como SVG para permitir zoom y mejor visualización
