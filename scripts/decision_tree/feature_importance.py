@@ -41,7 +41,7 @@ y = df['Outcome']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Entrenar modelo con profundidad limitada para interpretabilidad
-clf = DecisionTreeClassifier(max_depth=5, random_state=42)
+clf = DecisionTreeClassifier(max_depth=50, random_state=42)
 clf.fit(X_train, y_train)
 
 # Extraer importancias de características y crear ranking

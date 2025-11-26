@@ -6,8 +6,7 @@ from skopt import BayesSearchCV
 import time
 
 # Cargar el conjunto de datos
-df = pd.read_csv('../../datasets/pima_indian_diabetes_dataset/cleaned_dataset.csv')
-
+df = pd.read_csv(r'C:\Users\manue\OneDrive\Documentos\Ulatina\Git\IA\datasets\pima_indian_diabetes_dataset\cleaned_dataset.csv')
 # Dividir características y objetivo
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
