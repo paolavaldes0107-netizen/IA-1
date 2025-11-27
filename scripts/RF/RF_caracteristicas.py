@@ -17,7 +17,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # 2. Entrenar RF
 rf = RandomForestClassifier(
-    n_estimators=200,
+    n_estimators=1000,
     max_depth=None,
     random_state=42
 )
@@ -28,6 +28,6 @@ importances = rf.feature_importances_
 indices = np.argsort(importances)[::-1]
 
 print("Top 10 características más importantes:")
-for i in range(10):
+for i in range(8):
     idx = indices[i]
     print(f"{i+1}. {feature_names[idx]} -> {importances[idx]:.4f}")

@@ -23,7 +23,7 @@ tree.fit(X_train, y_train)
 # 3. Random Forest
 rf = RandomForestClassifier(
     n_estimators=100,
-    max_depth=None,
+    max_depth=5,
     random_state=42
 )
 rf.fit(X_train, y_train)

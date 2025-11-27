@@ -5,7 +5,8 @@ from mpl_toolkits.mplot3d import Axes3D
 from sklearn.svm import SVC
 
 # Cargar y transformar datos
-df = pd.read_csv(r"IA\scripts\support_vectors_machine\SVG_Shape_Features.csv")
+df = pd.read_csv(r"IA\datasets\mnist\mnist_test.csv")
+# df = pd.read_csv(r"IA\scripts\support_vectors_machine\SVG_Shape_Features.csv")
 df['cx'] = df['cx'] - 50
 df['cy'] = 980 - df['cy'] + 50
 

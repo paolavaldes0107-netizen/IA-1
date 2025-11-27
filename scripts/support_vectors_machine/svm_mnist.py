@@ -4,11 +4,11 @@ from sklearn.metrics import accuracy_score
 import time
 
 # Load training data
-train_csv_path = r"../1mp215-topicos-especiales/datasets/mnist/mnist_train.csv"
+train_csv_path = r"IA\datasets\mnist\mnist_train.csv"
 mnist_train_df = pd.read_csv(train_csv_path)
 
 # Load test data
-test_csv_path = r"../1mp215-topicos-especiales/datasets/mnist/mnist_test.csv"
+test_csv_path = r"IA\datasets\mnist\mnist_test.csv"
 mnist_test_df = pd.read_csv(test_csv_path)
 
 # Split features and labels
